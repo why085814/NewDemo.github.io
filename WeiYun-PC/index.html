@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>微云网页版</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/datas.js" ></script>
+		<script type="text/javascript" src="js/app.js" ></script>
+		<script type="text/javascript" src="js/tools.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	<body>
+		<section class="weiyun">
+			<header class="roof clearfix">
+				<h1 class="fl">
+					<a href="javascript:;" class="logo fl">微云</a>
+				</h1>
+				<a href="javascript:;" class="vip-info">微云会员首次开通低至一元</a>
+				<div class="fr">
+					<a href="javascript:;" class="vip-center fl">
+						<i class="vip-center-icon fl"></i>
+						<span class="fl">会员中心</span>
+					</a>
+					<a href="javascript:;" class="app fl">
+						<i class="app-icon fl"></i>
+						<span class="fl">下载客户端</span>
+					</a>
+					<input type="text" class="search fl" id="" placeholder="搜索全部文件" />
+					<div class="user fl pr">
+						<img class="user-icon" src="img/index/g.jpg"/>
+						<i class="arrow icon-bg pa"></i>
+					</div>
+				</div>
+			</header>
+			<section class="main">
+				<aside class="aside">
+					<div class="upload-box">
+						<div class="upload">
+							＋上传
+							<input type="file" name="file" title="请选择文件" value="+上传" />
+						</div>
+					</div>
+					<ul class="nav">
+						<li>
+							<a href="#" class="item all checked">
+								<i></i>
+								目录
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item recent">
+								<i></i>
+								最近
+							</a>
+						</li>
+						<li class="nav-gap"></li>
+						<li>
+							<a href="#" class="item doc">
+								<i></i>
+								文档
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item pic">
+								<i></i>
+								图片
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item music">
+								<i></i>
+								音乐
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item video">
+								<i></i>
+								视频
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item note">
+								<i></i>
+								笔记
+							</a>
+						</li>
+						<li class="nav-gap"></li>
+						<li>
+							<a href="#" class="item clip">
+								<i></i>
+								剪贴板
+							</a>
+						</li>
+						<li class="nav-gap"></li>
+						<li>
+							<a href="#" class="item share">
+								<i></i>
+								分享的链接
+							</a>
+						</li>
+						<li>
+							<a href="#" class="item recycle">
+								<i></i>
+								回收站
+							</a>
+						</li>
+					</ul>
+					<div class="aside-ft">
+						<a href="javascript:;">版权声明</a>
+						<span>丨</span>
+						<a href="javascript:;">投诉指引</a>
+					</div>
+				</aside>
+				<section class="content">
+					<header class="btn-box">
+						<ul class="btns-all show clearfix">
+							<li class="fl">
+								<a href="javascript:;" class="btns download-btn" id="download-btn">
+									<i></i>
+									下载
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;" class="btns share-btn" id="share-btn">
+									<i></i>
+									分享
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;" class="btns moveto-btn" id="moveto-btn">
+									<i></i>
+									移动到
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;" class="btns rename-btn" id="rename-btn">
+									<i></i>
+									重命名
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;" class="btns delete-btn" id="delete-btn">
+									<i></i>
+									删除
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;" class="btns newfile-btn" id="newfile-btn">
+									<i></i>
+									新建文件夹
+								</a><input type="" name="" id="" value=""  />
+							</li>
+							<li class="fl">
+								<a href="javascript:;" class="btns refresh-btn" id="refresh-btn">
+									<i></i>
+								</a>
+							</li>
+							<li class="fr">
+								<a href="javascript:;" class="btns howshow-btn" id="howshow-btn">
+									<i></i>
+									<!--<i></i>-->
+								</a>
+							</li>
+							<li class="fr">
+								<a href="javascript:;" class="btns tree-btn" id="tree-btn">
+									<i></i>
+								</a>
+							</li>
+						</ul>
+					</header>
+					<section class="warp clearfix">
+						<!--树状菜单-->
+						<div class="tree-menu">
+							
+						</div>
+						<div class="warp-r" id="warp-r">
+							<div class="breadcrumb-box clearfix">
+								<div class="checkall-box fl">
+									<span class="checkall-btn"></span>
+								</div>
+								<span class="weiyun-btn">微云</span>
+								<nav class="breadcrumb">
+								</nav>
+							</div>
+							<section class="file-warp" id="file-warp">
+								
+							</section>
+						</div>
+					</section>
+				</section>
+			</section>
+			<!--扩选框-->
+			<div class="selectbox"></div>
+			<!--拖拽尾巴图标-->
+			<div class="dragimg"></div>
+			<!--新建文件夹-->
+			<div class="file-back hide" id="newfoldering">
+				<div class="file">
+					<input type="text" class="file-name-in" autofocus />
+				</div>
+			</div>
+			<!--重命名input-->
+			<input type="text" class="rename-in hide" autofocus />
+			<!--右键菜单-->
+			<div class="contextmenu"></div>
+			<!--操作提示-->
+			<div class="control-msg-box">
+				<div class="control-msg clearfix">
+					<span class="control-ico fl"></span>
+					<span class="control-info fl"></span>
+				</div>
+			</div>
+			<!--提示框-->
+			<div class="msg-bg">
+				<div class="msg-box" id="delete-msg">
+					<header class="msg-title clearfix">
+						<span class="fl">删除文件</span>
+						<a href="javascript:;" class="fr close-btn">×</a>
+					</header>
+					<div class="msg-info pr">
+						<span class="ico"></span>
+						<div class="ques">确定要删除这个文件吗？</div>
+						<em>已删除的文件可以在回收站找到</em>
+					</div>
+					<div class="msg-btns">
+						<input type="button" class="cancle-btn" value="取消" />
+						<input type="button" class="ok-btn" value="确定" />
+					</div>
+				</div>
+				<div class="msg-box" id="move-msg">
+					<header class="msg-title clearfix">
+						<span class="fl">选择存储位置</span>
+						<a href="javascript:;" class="fr close-btn">×</a>
+					</header>
+					<div class="msg-info">
+						
+					</div>
+					<div class="msg-btns">
+						<input type="button" class="cancle-btn" value="取消" />
+						<input type="button" class="ok-btn" value="确定" />
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
