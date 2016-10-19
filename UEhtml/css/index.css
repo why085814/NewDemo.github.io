@@ -1,0 +1,436 @@
+/*public start*/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.ico{
+	background-image: url(../img/ico_index.png);
+	background-repeat: no-repeat;
+}
+/*public end*/
+
+/*global start*/
+.wrap{
+	width: 1180px;
+	margin: auto;
+}
+.mt40{
+	margin-top: 40px;
+}
+body{
+	font: 14px "微软雅黑";
+	background-color: #f1f1f1;
+}
+/*global end*/
+
+/*index start*/
+.head{
+	height: 50px;
+	background-color: #323436;
+}
+.head .logo{
+	width: 128px;
+	height: 36px;
+	text-indent: -9999px;
+	background-position: 0 0;
+	margin-top: 7px;
+	margin-right: 24px;
+}
+.head .btn_menu{
+	width: 56px;
+	height: 50px;
+	background-position: 0 -36px;
+}
+.head .search{
+	width: 14px;
+	height: 14px;
+	background-position: 0 -86px;
+	margin-top: 18px;
+	margin-right: 28px;
+}
+.head .login, .head .reg{
+	width: 70px;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 10px;
+	text-align: center;
+}
+.head .login{
+	color: #acacac;
+	background-color: #505050;
+}
+.head .reg{
+	color: #fff;
+	background-color: #6bc30d;
+}
+.banner{
+	height: 200px;
+	background: url(../img/banner.jpg) no-repeat;
+	padding-top: 41px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.banner_wrap{
+	width: 432px;
+	margin: auto;
+}
+.banner .time{
+	height: 40px;
+}
+.banner .time li{
+	width: 107px;
+	height: 40px;
+	border-right: 1px solid #385b72;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.banner .time li:last-child{
+	border-right: none;
+}
+.time .time_num{
+	width: 56px;
+	color: #00ffea;
+	font-size: 36px;
+	font: 48px/38px "HELVETICANEUELTPRO-THEX";
+/*	margin-right: 6px;*/
+}
+.time .time_unit{
+	color: #729cb7;
+	padding-top: 25px;
+	font-size: 12px;
+}
+.banner .adver{
+	color: #729cb7;
+	line-height: 34px;
+	font-size: 12px;
+	margin-bottom: 9px;
+}
+.banner_btn{
+	margin: auto;
+	width: 240px;
+	height: 30px;
+	text-align: center;
+}
+.banner_btn .UEMO,.banner_btn .UCode{
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.banner_btn .UEMO{
+	background-color: #00b4de;
+	color: #fff;
+}
+.banner_btn .UCode{
+	background-color: #486d7f;
+	color: #8096a4;
+	cursor: default;
+}
+.nav{
+	height: 40px;
+	padding: 10px 0;
+}
+.nav .each_nav{
+	width: 126px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+}
+.nav .industry{
+	border: 1px solid #d9dada;
+	border-bottom: none;
+	box-sizing: border-box;
+	background-color: #edeeee;
+}
+.each_nav .menu{
+	line-height: 38px;
+}
+.menu .ico_menu{
+	display: inline-block;
+	width: 12px;
+	height: 17px;
+	margin-right: 2px;
+	vertical-align: -3px;
+}
+.menu .ico_newestRem{
+	background-position: -14px -86px;
+}
+.menu .ico_menuColor{
+	background-position: -26px -86px;
+}
+.menu .ico_menuOwner{
+	background-position: -38px -86px;
+}
+.menu .menu_name{
+	display: inline-block;
+	margin-right: 3px;
+}
+.each_nav .ico_select{
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	background-position: -50px -86px;
+	vertical-align: 3px;
+	transition: 100ms transform;
+	-webkit-transition: 100ms transform;
+}
+.each_nav .select{
+	display: none;
+	text-align: center;
+}
+.each_nav:hover .ico_select{
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.each_nav:hover .select{
+	display: block;
+}
+/*main start*/
+.main{
+	border-top: 1px solid #e2e2e2;
+	background-color: #f1f1f1;
+	padding-top: 4px;
+}
+.main .big{
+	width: 580px;
+	height: 270px;
+	margin-right: 20px;
+	margin-top: 45px;
+	box-shadow: 0 0 1px 2px rgba(230,230,230,.8);
+}
+.main .small{
+	width: 280px;
+	height: 270px;
+	background-color: #fff;
+	color: #d1d1d1;
+	margin-right: 20px;
+	margin-top: 45px;
+	box-shadow: 0 0 1px 2px rgba(230,230,230,.8);
+}
+.main .small:nth-child(4n+3){
+	margin-right: 0;
+} 
+.small .pic{
+	width: 280px;
+	height: 180px;
+}
+.main .small .comInfo_ownerInfo{
+	padding-left: 20px;
+}
+.main .small .production_info{
+	height: 14px;
+	line-height: 14px;
+	margin: 15px 0 16px 0;
+}
+.production_info .ico_VP,.production_info .ico_comments,.production_info .ico_clickLike{
+	width: 18px;
+	height: 14px;	
+}
+.production_info .ico_VP{
+	background-position: 0 -103px;
+}
+.production_info .ico_comments{
+	background-position: -18px -103px;
+}
+.production_info .ico_clickLike{
+	background-position: -36px -103px;
+}
+.production_info .num{
+	padding: 0 14px 0 7px;
+}
+.ownerInfo{
+	border-top: 1px solid #f2f2f2;
+	padding-top: 11px;
+	color: #d1d1d1;
+}
+.ownerInfo a{
+	color: #d1d1d1;
+}
+.ownerInfo .create_type:hover, .ownerInfo .pro_type:hover{
+	color: greenyellow;
+}
+.ownerInfo .owner_photo{
+	width: 24px;
+	height: 24px;
+}
+.owner_photo img{
+	width: 24px;
+	height: 24px;
+}
+.ownerInfo .owner_name{
+	width: 78px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+}
+.ownerInfo .mo{
+	margin-right: 20px;
+	width: 16px;
+	height: 16px;
+}
+.main .pagination{
+	height: 36px;
+}
+.pagination a,.pagination .dot{
+	float: left;
+	width: 36px;
+	height: 36px;
+	margin-right: 5px;
+	background-color: #fff;
+	color: #a9a9a9;
+	text-align: center;
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+.pagination .dot{
+	background: none;
+}
+.pagination a:hover{
+	transition: 500ms;
+	background-color: #6E6E6E;
+	color: #fff;
+}
+.pagination .current{
+	background-color: #70ca10;
+	color: #fff;
+}
+.pagination .current:hover{
+	background-color: #70ca10;
+}
+.pagination .next{
+	display: block;
+	width: 11px;
+	height: 18px;
+	background-position: -54px -103px;
+	margin-left: 13px;
+}
+.main .design_company{
+	background-color: #fff;
+}
+.main .design_company .design_head{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #f2f2f2;
+}
+.design_company .title{
+	font-weight: normal;
+	font-size: 18px;
+	color: #6b6b6b;
+	text-indent: 1em;
+}
+.design_company .QQ{
+	width: 210px;
+	border-left: 1px solid #f2f2f2;
+	text-align: center;
+	color: #7e7e7e;
+	font-size: 14px;
+}
+.design_company .company_info{
+	padding: 31px 0 21px 18px;
+	font-size: 12px;
+}
+.company_info .each_company{
+	width: 125px;
+	height: 90px;
+	text-align: center;
+	margin-right: 20px;
+}
+.company_info .each_company:nth-child(6){
+	margin-right: 0;
+}
+.each_company .company_logo{
+	display: block;
+	width: 125px;
+	height: 44px;
+}
+.each_company .company_logo img{
+	width: 125px;
+	height: 44px;
+}
+
+.company_nameAddress .companyName{
+	color: #5a5a5a;
+}
+.company_nameAddress .company_address{
+	color: #a8a8a8;
+}
+/*main end*/
+/*foot start*/
+.foot{
+	height: 100px;
+	background-color: #222324;
+	color: #8e8e81;
+	line-height: 22px;
+}
+.foot .foot_link{
+	padding-top: 20px;
+	/*height: 30px;*/
+}
+.foot .foot_link .linkInfo a{
+	float: left;
+	color: #cecece;
+	margin-right: 40px;
+}
+.foot .foot_link .linkInfo .ico_sina{
+	display: block;
+	width: 22px;
+	height: 17px;
+	background-position: -56px -66px;
+}
+.foot .foot_link .contactInfo{
+	font-size: 12px;
+}
+.foot .foot_link .contactInfo li{
+	margin-right: 20px;
+}
+.foot .foot_link .industry_check{
+	width: 75px;
+	height: 30px;
+	background-position: -56px -36px;
+	cursor: pointer;
+}
+.copyright{
+	font-size: 12px;
+}
+.copyright a{
+	color: #62ca18;
+}
+/*foot end*/
+/*index end*/
+
+/*响应式*/
+@media all and (min-width: 933px) and (max-width: 1203px) {
+	.wrap{
+		width: 880px;
+	}
+	.main .small:nth-child(4n+3){
+		margin-right: 20px;
+	}
+	.main .small:nth-child(3n+2){
+		margin-right: 0;
+	}
+}
+@media all and (max-width: 932px) {
+	.wrap{
+		width: 580px;
+	}
+	.main .small:nth-child(4n+3){
+		margin-right: 20px;
+	}
+	.main .small:nth-child(2n+1){
+		margin-right: 0;
+	}
+	.company_info .each_company:nth-child(6){
+		margin-right: 20px;
+	}
+	.company_info .each_company:nth-child(4n){
+		margin-right: 0;
+	}
+}
