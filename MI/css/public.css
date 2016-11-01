@@ -1,0 +1,84 @@
+/*顶部hover*/
+
+#topbar a:hover {
+    color: #fff;
+}
+
+.nav_item .link:hover {
+    color: #ff6700;
+}
+
+.children-list .link:hover {
+    color: #ff6700;
+}
+
+.search-words a:hover {
+    color: #fff;
+    background-color: #ff6700;
+}
+
+.category-item .title:hover {
+    color: #fff;
+    background-color: #ff6700;
+}
+
+#ui-pager-item a:hover,
+#ui-pager-item a.active {
+    background-color: #fff;
+    background: rgba(255, 255, 255, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
+.ui-btn .prevBtn:hover {
+    background-position: 0px 50%;
+}
+
+.ui-btn .nextBtn:hover {
+    background-position: -42px 50%;
+}
+
+.btn-buy:hover {
+    color: #fff;
+    background-color: #f25807;
+    border-color: #f25807;
+}
+
+.sub-right-list li:hover ,.brick-promo-list li:hover,.brick-list li:hover{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, .15);
+}
+.site-footer .footer-links .col-links a:hover{
+    color: #ff6700;
+}
+.site-info .info-text .sites a:hover{
+    color: #ff6700;
+}
+.site-footer .list-service a:hover{
+    color: #ff6700;
+}
+.children-col-1 {
+    width: 265px;
+}
+
+.children-col-2 {
+    width: 530px;
+}
+
+.children-col-3 {
+    width: 795px;
+}
+.xm-plain-box .box-hd .more .tab-list li.tab-active{
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+
+.brick-item-m .brick-list-active{
+    height: 76px;
+    opacity: 1;
+}
+/*雪碧图*/
+
+.ico {
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}

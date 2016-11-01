@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+    background-color: #fff;
+    /*设置最小宽度*/
+    min-width: 1226px;
+}
+
+h1,h2,h3{
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    border: none;
+}
+
+ul, li ,span{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    -webkit-oppearance: none;
+}
+
+input[type="search"] {
+    box-sizing: content-box;
+}
+
+/*清浮动*/
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
