@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+
+    <link type="text/css" rel="stylesheet" href="../style/bootstrap/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="../style/bootstrap/bootstrap-select.min.css" />
+    <link type="text/css" rel="stylesheet" href="../style/bootstrap/skinBlue.css" />
+    <link type="text/css" rel="stylesheet" href="../style/login/Register.css" />
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="register_header_wap">
+        <div class="register_header clear">
+            <img class="h-logo fl" src="../images/login/register_logo.jpg" />
+            <span class="h-line"></span>
+            <p class="h-phone">欢迎注册</p>
+        </div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="register_content_wap clear">
+        <!-- 1.注册主体 -->
+        <div class="register_content" style="display:none;">
+            <div class="register_lt">
+                <p class="p_txt1">
+                   <img width="360" height="72" src="../images/login/register_img1.jpg" />
+                </p> 
+                <div class="p_txt2">
+                    <span class="animate_bg">
+                        <img class="ani_bg1" src="../images/login/register_img3.png" />
+                        <img class="ani_bg2" src="../images/login/register_img4.png" />
+                    </span>
+                    <img class="ani_bg3" width="540" height="390" src="../images/login/register_img5.png" />
+                </div>
+            </div>
+            <div class="register_rt">
+                <ol class="register_list">
+                    <li class="li_item">
+                        <p class="p_txt">手机号</p>
+                        <div class="input_block dq_cur">
+                            <i class="i_icon icon_po1"></i>
+                            <input class="form-control" type="text" value="请输入手机号" />
+                            <i class="i_danger"></i>
+                            <p class="i_tip">您输入的手机号格式不正确</p>
+                        </div>
+                    </li>
+                    <li class="li_item">
+                        <p class="p_txt">验证码</p>
+                        <div class="input_block">
+                            <i class="i_icon icon_po2"></i>
+                            <input class="form-control nw170" type="text" value="请输入验证码" />
+                            <button class="get_yzm" type="button">获取验证码</button>
+                            <i class="i_danger" style="right:94px;"></i>
+                            <p class="i_tip" style="right:86px;">验证码输入有误，请重新输入</p>
+                        </div>
+                    </li>
+                    <li class="li_item">
+                        <p class="p_txt">设置密码</p>
+                        <div class="input_block">
+                            <i class="i_icon icon_po3"></i>
+                            <input id="desc_txt1" class="form-control" type="text" value="请输入密码(数字＋字母)" />
+                            <input id="password1" class="form-control" type="password" value="" style="display:none;" />
+                            <i class="i_danger"></i>
+                            <p class="i_tip">密码长度请大于6位！</p>
+                        </div>
+                    </li>
+                    <li class="li_item">
+                        <p class="p_txt">确认密码</p>
+                        <div class="input_block">
+                            <i class="i_icon icon_po3"></i>
+                            <input id="desc_txt2" class="form-control" type="text" value="请确认密码" />
+                            <input id="password2" class="form-control" type="password" value="" style="display:none;" />
+                            <i class="i_danger"></i>
+                            <p class="i_tip">两次输入密码不一致！</p>
+                        </div>
+                    </li>
+                    <li class="li_item">
+                        <p class="p_txt">农场名称</p>
+                        <div class="input_block">
+                            <i class="i_icon icon_po4"></i>
+                            <input class="form-control" type="text" value="请输入农场名称" />
+                            <i class="i_danger"></i>
+                            <p class="i_tip">农场名称已存在</p>
+                        </div>
+                    </li>
+                    <li class="li_item clear">
+                        <p class="p_txt">农场所在地</p>
+                        <div class="se_selt93 fl mr10">
+                            <select class="selectpicker">
+                                <option selected="selected">请选择省</option>
+                                <option>北京</option>
+                                <option>吉林</option>
+                            </select>
+                        </div>
+                        <div class="se_selt93 fl mr10">
+                            <select class="selectpicker">
+                                <option selected="selected">请选择市</option>
+                                <option>大兴</option>
+                                <option>顺义</option>
+                            </select>
+                        </div>
+                        <div class="se_selt93 fl">
+                            <select class="selectpicker">
+                                <option selected="selected">请选择县</option>
+                                <option>亦庄镇</option>
+                                <option>黄村镇</option>
+                                <option>安定镇</option>
+                            </select>
+                        </div>
+                    </li>
+                </ol>
+                <div class="read_protocol clear">
+                    <input class="iCheck" type="checkbox" />
+                    <label class="txt">我已阅读并同意<span>《农场云注册协议》</span></label>
+                </div>
+                <button class="btn btn-success register_btn" type="submit">立即注册</button>
+                <a class="return_login" href="">返回登录</a>
+            </div>
+        </div>
+        <!-- 2.注册成功主体 -->
+        <div class="success_content" style="display:none;">
+            <div class="p_tip">
+                <p class="tip_txt1">恭喜您完成注册</p>
+                <p class="tip_txt2"><span>5</span>s后自动跳转到<a href="javascript:;">个人中心</a></p>
+            </div>
+        </div>
+        <!-- 3.注册成功新版 -->
+        <div class="new_registered">
+        	<div class="success_tip">
+            	<img class="ban_pic" src="../images/login/register_img8.png" />
+                <p class="text_tip1">感谢注册义田帮手标准版!</p>
+                <p class="text_tip2">我们会尽快审核您的注册信息，义田客服会在<font style="color:#f68e3a;">24小时内</font>（节假日顺延）联系你</p>
+                <p class="text_tip3">审核通过后会有<font style="font-size:16px;color:#55b5e7;">短信通知</font>，敬请留意【义田帮手】</p>
+                <a class="return_link" href="#">返回登录</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 脚部 -->
+    <div class="register_footer_wap clear">
+        <div class="register_footer">技术支持&nbsp;：北京奥科美软件有限公司&nbsp;&nbsp;备案/许可证号&nbsp;：京ICP09058216号-6</div>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript" src="../js/commons/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap/icheck.js"></script>
+<script type="text/javascript">
+jQuery = jQuery.noConflict();
+jQuery(function(){
+	
+    // 文本框获取焦点和失去焦点状态变化
+    jQuery('input[type=text]').focus(function(){
+        var txt_val = this.defaultValue;
+        if( jQuery(this).val() == txt_val ){
+            jQuery(this).val('');
+        }
+        jQuery(this).css('color','#333')
+    });
+    jQuery('input[type=text]').blur(function(){
+        var txt_val = this.defaultValue;
+        if( jQuery(this).val() == '' ){
+            jQuery(this).val( this.defaultValue );
+            jQuery(this).css('color','#ccc')
+        }else{
+            jQuery(this).css('color','#333')
+        }
+    });
+
+    //下拉菜单
+    jQuery('.selectpicker').selectpicker();
+
+    //复选框
+    jQuery('input[type="checkbox"]').iCheck({
+        checkboxClass: 'icheckbox_minimal-blue'
+    });
+
+    // 设置密码和确认密码状态
+    getPassword('#desc_txt1','#password1');
+    getPassword('#desc_txt2','#password2');
+
+    // 计算password-content  垂直居中
+	getHeight();
+	
+
+
+    
+
+    jQuery(window).resize(function(){
+        getHeight() 
+    });
+});
+
+    // -------设置密码和确认密码状态
+    function getPassword(obj,passw){
+        jQuery(obj).focus(function(){
+            jQuery(this).hide();
+            jQuery(passw).show();
+            jQuery(passw).focus();   
+        })
+        jQuery(passw).blur(function(){
+            if( jQuery(passw).val() == '' ){
+                jQuery(obj).show();
+                jQuery(passw).hide();    
+            }   
+        })
+    }
+    // -------计算password-content  垂直居中
+    function getHeight(){
+        var oWindowH = jQuery(window).height() ;
+        var oHeaderH = jQuery('.register_header_wap').outerHeight();
+        var oFooterH = jQuery('.register_footer_wap').outerHeight() ;
+        jQuery('.register_content_wap').css({
+            'height' : oWindowH - oHeaderH-oFooterH
+        });
+    }
+
+
+</script>
